@@ -1,0 +1,33 @@
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.newPost{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.newPost textarea{
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+    height: 88px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.newPost button {
+    border: none;
+    padding: 7px;
+    font-size: 18px;
+    background-color: #CDECAC;
+    cursor: pointer;
+}

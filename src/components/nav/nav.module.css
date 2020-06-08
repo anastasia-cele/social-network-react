@@ -1,0 +1,29 @@
+
+nav {
+    grid-area: n;
+    background-color: #CDECAC;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 25px 10px;
+    height: 500px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.mainMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+a {
+    color: darkred;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: darkblue;
+}

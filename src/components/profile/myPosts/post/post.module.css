@@ -1,0 +1,26 @@
+.item {
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    align-items: center;
+    display: flex;
+    width: 95%;
+}
+
+.text span {
+    margin-left: 25px;
+}
+
+.item img {
+    width: 75px;
+    border: deeppink 5px solid;
+    border-radius: 50%;
+}
+
+.item button {
+    margin-left: 10px;
+}

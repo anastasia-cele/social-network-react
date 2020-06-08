@@ -1,0 +1,10 @@
+.cover {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.cover img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
