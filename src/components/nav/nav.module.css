@@ -18,12 +18,17 @@ nav {
     align-items: flex-start;
 }
 
+
 a {
     color: darkred;
     text-decoration: none;
 
 }
 
-a:hover{
+a.activeLink {
+    color: darkblue;
+}
+
+a:hover {
     color: darkblue;
 }

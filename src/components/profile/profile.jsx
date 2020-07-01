@@ -6,7 +6,7 @@ import About from "./about/about";
 
 function Profile() {
     return (
-        <div className={s.content}>
+        <div>
             <Cover/>
             <About/>
             <MyPosts/>
