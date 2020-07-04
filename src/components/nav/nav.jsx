@@ -6,13 +6,13 @@ function Nav() {
     return (
         <nav>
             <div className={s.mainMenu}>
-                <NavLink to="/profile" activeClassName={s.activeLink}>Profile</NavLink>
-                <NavLink to="/dialogs" activeClassName={s.activeLink}>Messages</NavLink>
-                <NavLink to="/news" activeClassName={s.activeLink}>News</NavLink>
-                <NavLink to="/music" activeClassName={s.activeLink}>Music</NavLink>
+                <NavLink to="/profile" activeClassName={s.active}>Profile</NavLink>
+                <NavLink to="/dialogs" activeClassName={s.active}>Messages</NavLink>
+                <NavLink to="/news" activeClassName={s.active}>News</NavLink>
+                <NavLink to="/music" activeClassName={s.active}>Music</NavLink>
             </div>
             <div className={s.settings}>
-                <NavLink to="/settings" activeClassName={s.activeLink}>Settings</NavLink>
+                <NavLink to="/settings" activeClassName={s.active}>Settings</NavLink>
             </div>
         </nav>
     )

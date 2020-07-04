@@ -2,7 +2,11 @@ import React from "react";
 import s from './myPosts.module.css';
 import Post from "./post/post";
 
-function MyPosts() {
+function MyPosts(props) {
+
+    let postsElements =
+        props.posts.map(post => <Post message={post.message} likes={post.likes}/>);
+
     return (
         <div className={s.posts}>
             <div className={s.title}>
@@ -13,8 +17,7 @@ function MyPosts() {
                 <button>Add post</button>
             </div>
             <div className={s.allposts}>
-                <Post message="Hi, how are you?" likes="5"/>
-                <Post message="It's my first post!" likes="20"/>
+                {postsElements}
             </div>
         </div>
 

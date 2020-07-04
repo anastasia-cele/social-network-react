@@ -2,23 +2,3 @@
     display: grid;
     grid-template-columns:4fr 8fr;
 }
-
-.names {
-
-}
-
-.names .item {
-
-}
-
-.names .active {
-    color: deeppink;
-}
-
-.messages {
-
-}
-
-.messages .item {
-
-}
