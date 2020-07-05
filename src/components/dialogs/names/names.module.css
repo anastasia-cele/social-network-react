@@ -1,9 +1,18 @@
-.names {
-
+.item {
+    display: flex;
+    align-items: center;
 }
 
-.names .item {
+.avatar {
+    display: flex;
+    align-items: center;
+}
 
+.avatar img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin: 0 5px 5px 0;
 }
 
 a.active {

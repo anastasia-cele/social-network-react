@@ -7,6 +7,7 @@ function DialogWith(props) {
 
     return (
         <div className={s.item}>
+            <div className={s.avatar}><img src={props.avatar} alt=""/></div>
             <NavLink to={path} activeClassName={s.active}>{props.name}</NavLink>
         </div>
     )

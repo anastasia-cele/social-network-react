@@ -7,7 +7,7 @@ import MessageText from "./text/text";
 function Dialogs(props) {
 
     let dialogsElements =
-        props.state.dialogs.map(user => <DialogWith id={user.id} name={user.name}/>);
+        props.state.dialogs.map(user => <DialogWith id={user.id} name={user.name} avatar={user.url}/>);
 
 
     let messageElements =
