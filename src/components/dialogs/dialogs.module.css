@@ -2,3 +2,20 @@
     display: grid;
     grid-template-columns:2fr 8fr;
 }
+
+.messages textarea{
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+    height: 88px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.messages button {
+    border: none;
+    padding: 7px;
+    font-size: 18px;
+    background-color: #CDECAC;
+    cursor: pointer;
+}

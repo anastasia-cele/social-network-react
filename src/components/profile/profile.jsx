@@ -9,7 +9,7 @@ function Profile(props) {
         <div>
             <Cover/>
             <About/>
-            <MyPosts posts={props.state.posts}/>
+            <MyPosts posts={props.state.posts} addPost={props.addPost}/>
         </div>
     )
 };
