@@ -7,19 +7,21 @@ import MessageText from "./text/text";
 function Dialogs(props) {
 
     let dialogsElements =
-        props.state.dialogs.map(user => <DialogWith id={user.id} name={user.name} avatar={user.url}/>);
-
+        props.dialogPage.dialogs.map(user => <DialogWith id={user.id} name={user.name} avatar={user.url}/>);
 
     let messageElements =
-        props.state.messages.map(message => <MessageText text={message.text}/>);
+        props.dialogPage.messages.map(message => <MessageText text={message.text}/>);
 
     let newMessageElement = React.createRef();
 
-    let sendMessage = () => {
-        let text = newMessageElement.current.value;
-        alert(text);
+    let addMessage = () => {
+        props.dispatch({type: 'ADD-MESSAGE'});
     }
 
+    let onMessageChange = () => {
+        let message = newMessageElement.current.value;
+        props.dispatch({type: 'UPDATE-NEW-MESSAGE-TEXT', newMessage: message})
+    }
 
     return (
         <div className={s.dialogs}>
@@ -28,8 +30,8 @@ function Dialogs(props) {
             </div>
             <div className={s.messages}>
                 {messageElements}
-                <textarea ref={newMessageElement}></textarea>
-                <button onClick={ sendMessage }>Send</button>
+                <textarea onChange={onMessageChange} ref={newMessageElement} value={props.dialogPage.newMessageText}/>
+                <button onClick={addMessage}>Send</button>
             </div>
         </div>
     )
